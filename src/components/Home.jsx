@@ -22,23 +22,24 @@ const Home = () => {
             Gabriel Santos
           </h2>
           <p className="opacity-80 text-[0.9rem]">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus,
-            velit nesciunt! Alias in tempore mollitia culpa aut, molestias
-            quidem provident dignissimos itaque expedita fugit laborum saepe
-            tempora cumque accusantium incidunt.
+          Como um entusiasta de tecnologia, minha paixão pelo desenvolvimento web surgiu naturalmente. 
+          Desde então, tenho dedicado meu tempo a estudar e desenvolver projetos com o objetivo de dominar o ecossistema da linguagem Javascript. 
+          Meu foco é sempre criar soluções que combinem design e interatividade para proporcionar a melhor experiência possível para o usuário. A resolução de problemas é uma das minhas maiores habilidades, e adoro aplicar a tecnologia web para alcançar soluções eficazes. 
+          Afinal, grande parte da população está conectada à internet. 
+          Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na UNINOVE para aprimorar ainda mais meus conhecimentos e habilidades na área.
           </p>
           <div className="flex mt-4 gap-4">
             <a
-              href=""
+              href="https://www.linkedin.com/in/devgabrielsantos/"
               className="py-2 px-4 border-[2px] border-solid border-blue text-[0.9rem] rounded-[2.2rem] shadow-md"
             >
-              Download Cv
+              Linkedin
             </a>
             <a
               href="#contact"
               className="py-2 px-4 border-[2px] border-solid border-grey text-[0.9rem] rounded-[2.2rem] shadow-md"
             >
-              Contact
+              Contato 
             </a>
           </div>
         </motion.div>

@@ -1,4 +1,3 @@
-import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -15,7 +14,6 @@ function App() {
       <Home />
       <Projects />
       <Services />
-      <Blog />
       <Contact />
       <Footer />
       <ScrollToTop />

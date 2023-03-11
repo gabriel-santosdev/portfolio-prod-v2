@@ -12,13 +12,6 @@ import project5 from "./assets/project5.jpg";
 import project6 from "./assets/project6.jpg";
 import project7 from "./assets/project7.jpg";
 
-import blog1 from "./assets/blog1.jpg";
-import blog2 from "./assets/blog2.jpg";
-import blog3 from "./assets/blog3.jpg";
-import blog4 from "./assets/blog4.jpg";
-
-
-
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { GoMailRead } from "react-icons/go";
@@ -40,11 +33,6 @@ export const navLinks = [
     href: "services",
   },
   {
-    id: 4,
-    text: "Blog",
-    href: "blog",
-  },
-  {
     id: 6,
     text: "Contato",
     href: "contact",
@@ -55,24 +43,26 @@ export const services = [
   {
     id: 1,
     icon: <ImPencil />,
-    title: "Copywrite",
-    text: "Olá"
+    title: "",
+    text: ""
   },
   {
     id: 2,
     icon: <BsShop />,
-    title: "Ecommerce",
-    text:"meu cu"
+    title: "",
+    text:""
   },
   {
     id: 3,
     icon: <TiDeviceDesktop />,
-    title: "Web Design",
+    title: "Desenvolvimento",
+    text:""
   },
   {
     id: 4,
     icon: <TbSpeakerphone />,
-    title: "Marketing",
+    title: "",
+    text:""
   },
 ];
 export const serviceFinishes = [
@@ -102,10 +92,10 @@ export const serviceFinishes = [
   },
 ];
 export const btns = [
-  { id: 1, name: "All", value: "all" },
+  { id: 1, name: "Todos", value: "all" },
   { id: 2, name: "UI/UX", value: "ui/ux" },
   { id: 3, name: "Web Design", value: "web design" },
-  { id: 4, name: "Marketing", value: "marketing" },
+  // { id: 4, name: "Marketing", value: "marketing" },
 ];
 
 export const projects = [
@@ -146,44 +136,17 @@ export const projects = [
   },
 ];
 
-export const blogs = [
-  {
-    id: 1,
-    image: blog1,
-    title: "What Skills Do You Need for Marketing in 2023?",
-  },
-  {
-    id: 2,
-    image: blog2,
-    title: "What is Web Design? A Comprehensive Guide",
-  },
-  {
-    id: 3,
-    image: blog3,
-    title: "100 Best Web Design Blogs You Must Read in 2023",
-  },
-  {
-    id: 4,
-    image: blog4,
-    title: "How to Learn Web Design at Home",
-  },
-];
-
 
 export const contacts = [
   {
     id: 1,
     icon: <TfiHeadphoneAlt />,
-    text: "+959-883-271-929",
+    text: "+55 (11) 97655-2081",
   },
-  {
-    id: 2,
-    icon: <HiOutlineLocationMarker />,
-    text: "28 Green Tower, street Name, New York, USA",
-  },
+ 
   {
     id: 3,
     icon: <GoMailRead />,
-    text: "jhonsmitch2002@gmail.com",
+    text: "gabrieljorgesilvasantos@outlook.com",
   },
 ];
