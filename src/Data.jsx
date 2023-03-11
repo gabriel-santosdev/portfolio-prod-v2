@@ -13,7 +13,6 @@ import project6 from "./assets/project6.jpg";
 import project7 from "./assets/project7.jpg";
 
 import { TfiHeadphoneAlt } from "react-icons/tfi";
-import { HiOutlineLocationMarker } from "react-icons/hi";
 import { GoMailRead } from "react-icons/go";
 
 export const navLinks = [
@@ -33,7 +32,7 @@ export const navLinks = [
     href: "services",
   },
   {
-    id: 6,
+    id: 4,
     text: "Contato",
     href: "contact",
   },

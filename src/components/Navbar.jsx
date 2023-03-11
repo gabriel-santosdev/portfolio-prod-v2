@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { navLinks } from "../Data";
-import { HiMenuAlt3 } from "react-icons/hi";
+import { HiMenuAlt3, HiX } from "react-icons/hi";
 import NavLinks from "./NavLinks";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -27,21 +28,41 @@ const Navbar = () => {
         </div>
         <div className="md:flex hidden items-center gap-6">
           {navLinks.map((navLink) => {
-            return (
-              <div key={navLink.id}>
+            return  (
+              <div key={navLink.id} >
                 <a href={`#${navLink.href}`} className="text-[0.95rem]">
                   {navLink.text}
                 </a>
-              </div>
+                
+              </div>             
             );
           })}
+          
         </div>
         <HiMenuAlt3
           className="cursor-pointer text-3xl md:hidden"
           onClick={() => setToggle(!toggle)}
         />
       </div>
-      {toggle && <NavLinks setToggle={setToggle} />}
+      {toggle && (
+        <motion.div
+        initial={{x: 500}}
+        animate={{x: 0}}
+        className="fixed right-0 top-0 bg-blue h-screen text-white w-80"  
+        >
+        <div className="flex flex-col gap-8 mt-[40%] ml-[30%] "> 
+          {navLinks.map((navLink) => {
+            return <NavLinks key={navLink.id} {...navLink} />
+          })}
+        </div>
+        <HiX
+        className="absolute right-4 text-3xl top-8 cursor-pointer"
+        onClick={() => setToggle(!toggle)}
+        
+        />
+  
+        </motion.div>
+      )}
     </div>
   );
 };
