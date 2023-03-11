@@ -43,24 +43,26 @@ export const services = [
   {
     id: 1,
     icon: <ImPencil />,
-    title: "Copywrite",
-    text: "Olá"
+    title: "",
+    text: ""
   },
   {
     id: 2,
     icon: <BsShop />,
-    title: "Ecommerce",
-    text:"meu cu"
+    title: "",
+    text:""
   },
   {
     id: 3,
     icon: <TiDeviceDesktop />,
-    title: "Web Design",
+    title: "Desenvolvimento",
+    text:""
   },
   {
     id: 4,
     icon: <TbSpeakerphone />,
-    title: "Marketing",
+    title: "",
+    text:""
   },
 ];
 export const serviceFinishes = [

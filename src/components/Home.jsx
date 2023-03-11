@@ -22,9 +22,11 @@ const Home = () => {
             Gabriel Santos
           </h2>
           <p className="opacity-80 text-[0.9rem]">
-          Apaixonado por tecnologia, me interessei pelo desenvolvimento web. Desde então, sigo estudando e desenvolvendo projetos, a fim de dominar o ecossistema da linguagem Javascript. Sempre buscando criar soluções combinando design e interatividade para uma melhor experiência do usuário.
-
-Sou fascinado por resolução de problemas, principalmente por meio da tecnologia que envolvem web, onde grande parte da população esta conectada. Atualmente cursando Análise e Desenvolvimento de Sistemas na UNINOVE.
+          Como um entusiasta de tecnologia, minha paixão pelo desenvolvimento web surgiu naturalmente. 
+          Desde então, tenho dedicado meu tempo a estudar e desenvolver projetos com o objetivo de dominar o ecossistema da linguagem Javascript. 
+          Meu foco é sempre criar soluções que combinem design e interatividade para proporcionar a melhor experiência possível para o usuário. A resolução de problemas é uma das minhas maiores habilidades, e adoro aplicar a tecnologia web para alcançar soluções eficazes. 
+          Afinal, grande parte da população está conectada à internet. 
+          Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na UNINOVE para aprimorar ainda mais meus conhecimentos e habilidades na área.
           </p>
           <div className="flex mt-4 gap-4">
             <a

@@ -46,7 +46,7 @@ const Contact = () => {
           </div>
           <div>
             <textarea
-              placeholder="Descrição do Projeto"
+              placeholder="Mensagem"
               className="outline-none bg-transparent border border-solid border-blue resize-none text-[0.9rem] p-2 h-40 w-80"
             ></textarea>
             <div className="mt-2 text-end">
