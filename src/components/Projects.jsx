@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { btns } from "../Data";
 import { projects } from "../Data";
 import { motion, AnimatePresence } from "framer-motion";
+import  './index.css'
 const Projects = () => {
   const [filterImages, setFilterImages] = useState(null);
   useEffect(() => {
@@ -40,7 +41,7 @@ const Projects = () => {
                   layout
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  exit={{ opacity: 0, transition: { duration: 0.3 } }}
+                  exit={{ opacity: 0, transition: { duration: 0.1 } }}
                   key={filterImage.id}
                 >
                   <motion.img src={filterImage.image} alt="" />
