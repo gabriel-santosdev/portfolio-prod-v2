@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { btns } from "../Data";
 import { projects } from "../Data";
 import { motion, AnimatePresence } from "framer-motion";
-import  './index.css'
+import GithubIcon from "../assets/github.png"
+import WebIcon from "../assets/local-na-rede-internet.png"
+import './index.css'
 const Projects = () => {
   const [filterImages, setFilterImages] = useState(null);
   useEffect(() => {
@@ -33,7 +35,7 @@ const Projects = () => {
         })}
       </div>
       <AnimatePresence>
-        <motion.div className="grid sm:grid-cols-2 md:grid-cols-3 mt-12 gap-3">
+        <motion.div className="grid sm:grid-cols-2 md:grid-cols-3 mt-12 gap-3 static">
           {filterImages &&
             filterImages.map((filterImage) => {
               return (
@@ -44,7 +46,21 @@ const Projects = () => {
                   exit={{ opacity: 0, transition: { duration: 0.1 } }}
                   key={filterImage.id}
                 >
-                  <motion.img src={filterImage.image} alt="" />
+                  <motion.a href={filterImage.link} target="_blank" >
+                    <motion.div className="relative top-[135px] left-[80px] invisible hover:visible" >
+                      <p className="font-bold  text-lg ">Visite o projeto:</p>
+                      <motion.div className="flex ml-[16px]" >
+                        <a>
+                          <img src={GithubIcon} alt="Github Icon" className="w-[32px] h-[32px] m-2" />
+                        </a>
+                        <a >
+                          <img src={WebIcon} alt="Web Icon" className="w-[37px] h-[37px] m-2" />
+                        </a>
+                      </motion.div>
+                    </motion.div>
+                    <motion.img src={filterImage.image} alt="" className="hover:opacity-20 transition-opacity" />
+                  </motion.a>
+
                 </motion.div>
               );
             })}

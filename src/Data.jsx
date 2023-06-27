@@ -94,7 +94,6 @@ export const btns = [
   { id: 1, name: "Todos", value: "all" },
   { id: 2, name: "UI/UX", value: "ui/ux" },
   { id: 3, name: "Web Design", value: "web design" },
-  // { id: 4, name: "Marketing", value: "marketing" },
 ];
 
 export const projects = [
@@ -102,36 +101,44 @@ export const projects = [
     id: 1,
     image: project1,
     value: "web design",
+    linkGithub: "www.google.com",
+    linkWeb: "www.google.com",
   },
   {
     id: 2,
     image: project2,
     value: "ui/ux",
+    link:"www.google.com",
   },
   {
     id: 3,
     image: project3,
     value: "ui/ux",
+    link:"",
   },
   {
     id: 4,
     image: project4,
     value: "web design",
+    link:"",
   },
   {
     id: 5,
     image: project5,
     value: "ui/ux",
+    link:"",
   },
   {
     id: 6,
     image: project6,
     value: "marketing",
+    link:"",
   },
   {
     id: 7,
     image: project7,
     value: "marketing",
+    link:"",
   },
 ];
 

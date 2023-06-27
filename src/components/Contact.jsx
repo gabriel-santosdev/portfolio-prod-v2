@@ -36,13 +36,6 @@ const Contact = () => {
                 placeholder="E-mail"
               />
             </div>
-            <div className="mb-5">
-              <input
-                type="text"
-                className="outline-none bg-transparent border border-solid border-blue p-2 text-[0.9rem]"
-                placeholder="Budget"
-              />
-            </div>
           </div>
           <div>
             <textarea
