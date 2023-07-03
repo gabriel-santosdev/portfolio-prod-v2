@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import ScrollToTop from "./components/ScrollToTop";
 import Services from "./components/Services";
+import Skills from "./components/Skills";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <Home />
       <Projects />
       <Services />
+      <Skills />
       <Contact />
       <Footer />
       <ScrollToTop />
