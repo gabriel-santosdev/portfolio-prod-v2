@@ -22,23 +22,20 @@ const Home = () => {
             Gabriel Santos
           </h2>
           <p className="opacity-80 text-[0.9rem]">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus,
-            velit nesciunt! Alias in tempore mollitia culpa aut, molestias
-            quidem provident dignissimos itaque expedita fugit laborum saepe
-            tempora cumque accusantium incidunt.
+            Como entusiasta de tecnologia, meu foco é o desenvolvimento web. Busco soluções interativas e com design atrativo, visando a melhor experiência do usuário. Formado em Análise e Desenvolvimento de Sistemas pela UNINOVE (Universidade Nove de Julho).
           </p>
           <div className="flex mt-4 gap-4">
             <a
-              href=""
+              href="https://www.linkedin.com/in/devgabrielsantos/"
               className="py-2 px-4 border-[2px] border-solid border-blue text-[0.9rem] rounded-[2.2rem] shadow-md"
             >
-              Download Cv
+              Linkedin
             </a>
             <a
               href="#contact"
               className="py-2 px-4 border-[2px] border-solid border-grey text-[0.9rem] rounded-[2.2rem] shadow-md"
             >
-              Contact
+              Contato
             </a>
           </div>
         </motion.div>

@@ -1,26 +1,20 @@
 import { ImPencil } from "react-icons/im";
-import { BsShop, BsHeart, BsWatch, BsStar } from "react-icons/bs";
-import { BiCoffeeTogo } from "react-icons/bi";
-import { TiDeviceDesktop } from "react-icons/ti";
+import { BsShop, BsCodeSlash } from "react-icons/bs";
+import { AiFillHtml5 } from "react-icons/ai"
+import { FaCss3Alt, FaReact, FaUser } from "react-icons/fa";
+import { SiTypescript, SiJavascript } from "react-icons/si"
+import { MdOutlineScreenSearchDesktop } from "react-icons/md"
 import { TbSpeakerphone } from "react-icons/tb";
 
-import project1 from "./assets/project1.jpg";
-import project2 from "./assets/project2.jpg";
-import project3 from "./assets/project3.jpg";
-import project4 from "./assets/project4.jpg";
+import crud_project from "./assets/CRUD.png";
+import cmc_project from "./assets/cmc_projeto.png";
+import githubfinder_project from "./assets/Github-Finder.png";
+import organo_project from "./assets/Organo.png";
 import project5 from "./assets/project5.jpg";
 import project6 from "./assets/project6.jpg";
 import project7 from "./assets/project7.jpg";
 
-import blog1 from "./assets/blog1.jpg";
-import blog2 from "./assets/blog2.jpg";
-import blog3 from "./assets/blog3.jpg";
-import blog4 from "./assets/blog4.jpg";
-
-
-
 import { TfiHeadphoneAlt } from "react-icons/tfi";
-import { HiOutlineLocationMarker } from "react-icons/hi";
 import { GoMailRead } from "react-icons/go";
 
 export const navLinks = [
@@ -41,11 +35,11 @@ export const navLinks = [
   },
   {
     id: 4,
-    text: "Blog",
-    href: "blog",
+    text: "Conhecimentos",
+    href: "skills",
   },
   {
-    id: 6,
+    id: 5,
     text: "Contato",
     href: "contact",
   },
@@ -55,117 +49,123 @@ export const services = [
   {
     id: 1,
     icon: <ImPencil />,
-    title: "Copywrite",
-    text: "Olá"
+    title: "UX/UI Design",
+    text: "Foco em criar interfaces intuitivas e visualmente atraentes, transformando ideias em designs funcionais e envolventes, garantindo a melhor experiência para os usuários. "
   },
   {
     id: 2,
-    icon: <BsShop />,
-    title: "Ecommerce",
-    text:"meu cu"
+    icon: <FaUser />,
+    title: "UX Writting",
+    text: " Design e conteúdos com foco na melhor experiência dos usuários. "
   },
   {
     id: 3,
-    icon: <TiDeviceDesktop />,
-    title: "Web Design",
+    icon: <BsCodeSlash />,
+    title: "Desenvolvimento",
+    text: "Desenvolvo sites profissionais, blogs, portfólios, landing pages e e-commerce."
   },
   {
     id: 4,
-    icon: <TbSpeakerphone />,
-    title: "Marketing",
+    icon: <MdOutlineScreenSearchDesktop />,
+    title: "SEO",
+    text: "Aumento da visibilidade nos mecanismos de busca por meio de estratégias como pesquisa de palavras-chave, otimização de conteúdo e construção de links para melhorar o posicionamento orgânico nos resultados de pesquisa."
   },
 ];
-export const serviceFinishes = [
+
+export const skills = [
   {
     id: 1,
-    icon: <BsHeart />,
-    text: "Happy Clients",
-    amount: 566,
+    icon: <AiFillHtml5 />,
+    title: "HTML 5",
+    text: ""
   },
   {
     id: 2,
-    icon: <BsWatch />,
-    text: "Working Hours",
-    amount: 5335,
+    icon: <FaCss3Alt />,
+    title: "CSS 3",
+    text: ""
   },
   {
     id: 3,
-    icon: <BsStar />,
-    text: "Awards Won",
-    amount: 13,
+    icon: <SiTypescript />,
+    title: "TypeScript",
+    text: ""
   },
   {
     id: 4,
-    icon: <BiCoffeeTogo />,
-    text: "Coffee Consumed",
-    amount: 1189,
+    icon: <SiJavascript />,
+    title: "JavaScript",
+    text: ""
+  },
+  {
+    id: 5,
+    icon: <FaReact />,
+    title: "React.JS",
+    text: ""
+  },
+  {
+    id: 6,
+    icon: <BsCodeSlash />,
+    title: "Next.JS",
+    text: ""
   },
 ];
+
 export const btns = [
-  { id: 1, name: "All", value: "all" },
+  { id: 1, name: "Todos", value: "all" },
   { id: 2, name: "UI/UX", value: "ui/ux" },
   { id: 3, name: "Web Design", value: "web design" },
-  { id: 4, name: "Marketing", value: "marketing" },
 ];
 
 export const projects = [
   {
     id: 1,
-    image: project1,
+    image: crud_project,
     value: "web design",
+    linkGithub: "https://github.com/gabriel-santosdev/crudjs",
+    linkWeb: "https://crudview.netlify.app/",
   },
   {
     id: 2,
-    image: project2,
+    image: cmc_project,
     value: "ui/ux",
+    linkGithub: "https://github.com/gabriel-santosdev/cmcservicoseletricos",
+    linkWeb: "https://cmcservicoseletricos.netlify.app/",
   },
   {
     id: 3,
-    image: project3,
+    image: githubfinder_project,
     value: "ui/ux",
+    linkGithub: "https://github.com/gabriel-santosdev/github-finder",
+    linkWeb: "https://github-finder1.netlify.app/",
   },
   {
     id: 4,
-    image: project4,
+    image: organo_project,
     value: "web design",
+    linkGithub: "https://github.com/gabriel-santosdev/ORGANO",
+    linkWeb: "",
   },
   {
     id: 5,
     image: project5,
     value: "ui/ux",
+    linkGithub: "www.google.com",
+    linkWeb: "www.linkedin.com",
   },
   {
     id: 6,
     image: project6,
-    value: "marketing",
+    value: "all",
+    linkGithub: "www.google.com",
+    linkWeb: "www.linkedin.com",
   },
   {
     id: 7,
     image: project7,
-    value: "marketing",
-  },
-];
-
-export const blogs = [
-  {
-    id: 1,
-    image: blog1,
-    title: "What Skills Do You Need for Marketing in 2023?",
-  },
-  {
-    id: 2,
-    image: blog2,
-    title: "What is Web Design? A Comprehensive Guide",
-  },
-  {
-    id: 3,
-    image: blog3,
-    title: "100 Best Web Design Blogs You Must Read in 2023",
-  },
-  {
-    id: 4,
-    image: blog4,
-    title: "How to Learn Web Design at Home",
+    value: "all",
+    linkGithub: "www.google.com",
+    linkWeb: "www.linkedin.com",
   },
 ];
 
@@ -174,16 +174,12 @@ export const contacts = [
   {
     id: 1,
     icon: <TfiHeadphoneAlt />,
-    text: "+959-883-271-929",
+    text: "+55 (11) 97655-2081",
   },
-  {
-    id: 2,
-    icon: <HiOutlineLocationMarker />,
-    text: "28 Green Tower, street Name, New York, USA",
-  },
+
   {
     id: 3,
     icon: <GoMailRead />,
-    text: "jhonsmitch2002@gmail.com",
+    text: "gabrieljorgesilvasantos@outlook.com",
   },
 ];
