@@ -4,7 +4,6 @@ import { projects } from "../Data";
 import { motion, AnimatePresence } from "framer-motion";
 import GithubIcon from "../assets/github.png"
 import WebIcon from "../assets/local-na-rede-internet.png"
-import './index.css'
 const Projects = () => {
   const [filterImages, setFilterImages] = useState(null);
   useEffect(() => {
@@ -46,20 +45,20 @@ const Projects = () => {
                   exit={{ opacity: 0, transition: { duration: 0.1 } }}
                   key={filterImage.id}
                 >
-                  <motion.a href={filterImage.link} target="_blank" >
-                    <motion.div className="relative top-[135px] left-[80px] invisible hover:visible" >
+                  <motion.div target="_blank" className="group">
+                    <motion.div className="relative top-[135px] left-[80px] opacity-0 group-hover:opacity-100 transition-opacity" >
                       <p className="font-bold  text-lg ">Visite o projeto:</p>
-                      <motion.div className="flex ml-[16px]" >
-                        <a>
-                          <img src={GithubIcon} alt="Github Icon" className="w-[32px] h-[32px] m-2" />
+                      <motion.div className="flex ml-[16px] " >
+                        <a href={filterImage.linkGithub} target="_blank" className="z-50">
+                          <img src={GithubIcon} alt="Github Icon" className="w-[32px] h-[32px] m-2 cursor-pointer" />
                         </a>
-                        <a >
-                          <img src={WebIcon} alt="Web Icon" className="w-[37px] h-[37px] m-2" />
+                        <a href={filterImage.linkWeb} target="_blank" className="z-50">
+                          <img src={WebIcon} alt="Web Icon" className="w-[37px] h-[37px] m-2 cursor-pointer" />
                         </a>
                       </motion.div>
                     </motion.div>
-                    <motion.img src={filterImage.image} alt="" className="hover:opacity-20 transition-opacity" />
-                  </motion.a>
+                    <motion.img src={filterImage.image} alt="" className="group-hover:opacity-20 transition-opacity" />
+                  </motion.div>
 
                 </motion.div>
               );
