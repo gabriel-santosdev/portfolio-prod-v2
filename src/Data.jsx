@@ -10,7 +10,7 @@ import crud_project from "./assets/CRUD.png";
 import cmc_project from "./assets/cmc_projeto.png";
 import githubfinder_project from "./assets/Github-Finder.png";
 import organo_project from "./assets/Organo.png";
-import project5 from "./assets/project5.jpg";
+import rosc_project from "./assets/ROSC.png";
 import project6 from "./assets/project6.jpg";
 import project7 from "./assets/project7.jpg";
 
@@ -148,10 +148,10 @@ export const projects = [
   },
   {
     id: 5,
-    image: project5,
+    image: rosc_project,
     value: "ui/ux",
-    linkGithub: "www.google.com",
-    linkWeb: "www.linkedin.com",
+    linkGithub: "https://github.com/gabriel-santosdev/ROSC",
+    linkWeb: "https://rosc-gabriel-santosdev.vercel.app/",
   },
   {
     id: 6,
