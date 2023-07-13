@@ -113,60 +113,40 @@ export const skills = [
 
 export const btns = [
   { id: 1, name: "Todos", value: "all" },
-  { id: 2, name: "UI/UX", value: "ui/ux" },
-  { id: 3, name: "Web Design", value: "web design" },
+  //   { id: 2, name: "UI/UX", value: "ui/ux" },
+  //   { id: 3, name: "Web Design", value: "web design" },
 ];
 
 export const projects = [
   {
     id: 1,
     image: crud_project,
-    value: "web design",
+    value: "all",
     linkGithub: "https://github.com/gabriel-santosdev/crudjs",
     linkWeb: "https://crudview.netlify.app/",
   },
   {
     id: 2,
     image: cmc_project,
-    value: "ui/ux",
+    value: "all",
     linkGithub: "https://github.com/gabriel-santosdev/cmcservicoseletricos",
     linkWeb: "https://cmcservicoseletricos.netlify.app/",
   },
   {
     id: 3,
     image: githubfinder_project,
-    value: "ui/ux",
+    value: "all",
     linkGithub: "https://github.com/gabriel-santosdev/github-finder",
     linkWeb: "https://github-finder1.netlify.app/",
   },
   {
     id: 4,
     image: organo_project,
-    value: "web design",
+    value: "all",
     linkGithub: "https://github.com/gabriel-santosdev/ORGANO",
     linkWeb: "",
   },
-  {
-    id: 5,
-    image: rosc_project,
-    value: "ui/ux",
-    linkGithub: "https://github.com/gabriel-santosdev/ROSC",
-    linkWeb: "https://rosc-gabriel-santosdev.vercel.app/",
-  },
-  {
-    id: 6,
-    image: project6,
-    value: "all",
-    linkGithub: "www.google.com",
-    linkWeb: "www.linkedin.com",
-  },
-  {
-    id: 7,
-    image: project7,
-    value: "all",
-    linkGithub: "www.google.com",
-    linkWeb: "www.linkedin.com",
-  },
+
 ];
 
 

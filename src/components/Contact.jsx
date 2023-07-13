@@ -2,6 +2,7 @@ import React from "react";
 import validator from 'validator'
 import { useState } from "react";
 import { contacts } from "../Data";
+import Modal from "./Modal/Modal";
 import axios from "axios";
 
 
@@ -11,13 +12,15 @@ const Contact = () => {
     name: '',
     message: '',
     email: '',
-    accesskey: '3d7e0189-0018-49b5-9a87-067a618d57fd',
+    accessKey: '3d7e0189-0018-49b5-9a87-067a618d57fd',
     subject: 'StaticForms - Contact Form',
   }
 
   const [form, setForm] = useState(initialFormValue);
   const [valid, setValid] = useState(true);
-
+  const [showModal, setShowModal] = useState(false);
+  const [message, setMessage] = useState('')
+  const [error, setError] = useState(false)
 
   const handleChange = (e) => {
     const { value, name } = e.target;
@@ -25,22 +28,28 @@ const Contact = () => {
     name === "email" && setValid(validator.isEmail(value));
     setForm({ ...form, [name]: value });
   }
-  console.log(form, valid)
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (valid) {
       const API = axios.create({
-        baseURL: 'https://api.staticforms.xyz/submit',
+        baseURL: 'https://api.staticforms.xyz',
         headers: {
           "Content-Type": 'application/json'
         },
       })
 
-      API.post(JSON.stringify(form))
-        .then((response) => { console.log(response) })
-        .catch((error) => { console.log(error) })
+      API.post('/submit', JSON.stringify(form))
+        .then((response) => {
+          setMessage('Sua mensagem foi enviada!')
+        })
+        .catch((error) => {
+          setMessage('Falha ao enviar sua mensagem.')
+          setError(true)
+        })
+        .finally(() => {
+          setShowModal(true)
+        })
 
     } else {
       setValid(false);
@@ -109,8 +118,11 @@ const Contact = () => {
               </button>
             </div>
           </div>
+
         </form>
       </div>
+      {showModal && <Modal message={message} error={error} changeToggle={() => setShowModal(false)} />}
+
     </div>
   );
 };
