@@ -12,7 +12,7 @@ const Contact = () => {
     name: '',
     message: '',
     email: '',
-    accessKey: '3d7e0189-0018-49b5-9a87-067a618d57fd',
+    accessKey: '11a3190a-4e47-415c-8eee-cff28b898807',
     subject: 'StaticForms - Contact Form',
   }
 

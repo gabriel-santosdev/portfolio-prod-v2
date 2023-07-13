@@ -160,6 +160,6 @@ export const contacts = [
   {
     id: 3,
     icon: <GoMailRead />,
-    text: "gabrieljorgesilvasantos@outlook.com",
+    text: "contato@gabrielsantos.tec.br",
   },
 ];
