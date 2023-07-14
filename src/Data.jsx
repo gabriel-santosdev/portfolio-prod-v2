@@ -48,24 +48,18 @@ export const navLinks = [
 export const services = [
   {
     id: 1,
-    icon: <ImPencil />,
-    title: "UX/UI Design",
-    text: "Foco em criar interfaces intuitivas e visualmente atraentes, transformando ideias em designs funcionais e envolventes, garantindo a melhor experiência para os usuários. "
-  },
-  {
-    id: 2,
     icon: <FaUser />,
     title: "UX Writting",
     text: " Design e conteúdos com foco na melhor experiência dos usuários. "
   },
   {
-    id: 3,
+    id: 2,
     icon: <BsCodeSlash />,
     title: "Desenvolvimento",
     text: "Desenvolvo sites profissionais, blogs, portfólios, landing pages e e-commerce."
   },
   {
-    id: 4,
+    id: 3,
     icon: <MdOutlineScreenSearchDesktop />,
     title: "SEO",
     text: "Aumento da visibilidade nos mecanismos de busca por meio de estratégias como pesquisa de palavras-chave, otimização de conteúdo e construção de links para melhorar o posicionamento orgânico nos resultados de pesquisa."
