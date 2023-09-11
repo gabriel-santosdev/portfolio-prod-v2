@@ -1,7 +1,7 @@
 import { ImPencil } from "react-icons/im";
 import { BsShop, BsCodeSlash } from "react-icons/bs";
 import { AiFillHtml5 } from "react-icons/ai"
-import { FaCss3Alt, FaReact, FaUser } from "react-icons/fa";
+import { FaCss3Alt, FaReact, FaUser, FaVuejs } from "react-icons/fa";
 import { SiTypescript, SiJavascript } from "react-icons/si"
 import { MdOutlineScreenSearchDesktop } from "react-icons/md"
 import { TbSpeakerphone } from "react-icons/tb";
@@ -101,6 +101,12 @@ export const skills = [
     id: 6,
     icon: <BsCodeSlash />,
     title: "Next.JS",
+    text: ""
+  },
+  {
+    id: 7,
+    icon: <FaVuejs />,
+    title: "Vue.JS",
     text: ""
   },
 ];
