@@ -27,9 +27,17 @@ const Home = () => {
           <div className="flex mt-4 gap-4">
             <a
               href="https://www.linkedin.com/in/devgabrielsantos/"
+              target="_blank"
               className="py-2 px-4 border-[2px] border-solid border-blue text-[0.9rem] rounded-[2.2rem] shadow-md"
             >
               Linkedin
+            </a>
+            <a
+              href="https://github.com/gabriel-santosdev"
+              target="_blank"
+              className="py-2 px-4 border-[2px] border-solid border-black text-[0.9rem] rounded-[2.2rem] shadow-md"
+            >
+              Github
             </a>
             <a
               href="#contact"
